@@ -19,7 +19,7 @@ Once installed, please do run the test set that checks your installation by runn
 
 ---
 
-The example/ directory has an example run script that users could modify for their own applications. The idea would be to (1) modify the function near the top of the program to read in your dataset, and (2) change any of the space-time binning and run parameters at the top of the script to better suite your problem. The current example uses the large, open dataset of focal mechanism from Uchide (2022): https://doi.org/10.1029/2022JB024036.
+The example/ directory has an example run script that users could modify for their own applications. The idea would be to (1) modify the function near the top of the program to read in your dataset, and (2) change any of the space-time binning and run parameters at the top of the script to better suite your problem. The current example uses the large, open dataset of focal mechanism from Uchide (2022): https://doi.org/10.1029/2022JB024036. There is a copy of the example output file in the frozen/ directory so you don't have to worry about overwriting if you run the example. Note that answers will change slightly from run to run due to the randomization.
 
 The code also has the capability for uncertainty analysis using bootstrap resampling. An example use case is currently under construction and will appear in the example/ directory once complete. 
 
