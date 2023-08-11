@@ -15,7 +15,7 @@ Once installed, please do run the test set that checks your installation by runn
 
 ` pkg> test StressInversion`
 
-**Note:** The StressInversion software was finalized using Julia v1.8. It is recommended to use this version or later; older versions may work but there can be compatibility issues with the packages StressInversion depends on.
+**Note:** The StressInversion software was finalized using Julia v1.8. It is recommended to use at least v1.7 or later; older versions may work but there can be compatibility issues with the packages StressInversion depends on.
 
 ---
 
