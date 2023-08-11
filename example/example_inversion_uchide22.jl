@@ -5,7 +5,7 @@
 ############## Packages ######################
 
 using StressInversion
-using Printf, StatsBase, Dates, DataFrames
+using Printf, StatsBase, Dates, DataFrames, CSV
 
 ######### Define Program Parameters ##########
 
@@ -19,8 +19,7 @@ if !(isdir(out_dir)); mkpath(out_dir); end
 const fptype = Float32 # Float32 works well for this problem
 
 # binning in X and T: modify for your application 
-#   - these are the bin half-widths
-#   - smaller numbers give finer resolution but longer run Times
+#   - smaller numbers give finer resolution but longer run times
 #   - if stride numbers are < bin numbers, the bins will overlap       
 const binX = binY = 1.0 # degrees
 const strideX = strideY = 1.0*binX # no overlap since stride and bin the same 
@@ -98,7 +97,7 @@ function load_uchide_dataframe(mech_file, fptype)
     end
     df[!,"year"] = convert.(fptype,years)
 
-    # return on necessary columns
+    # return only necessary columns
     select!(df,["lon","lat","strike1","dip1","rake1","strike2","dip2","rake2","year"])
     return df
 end
