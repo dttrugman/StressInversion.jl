@@ -6,7 +6,7 @@
 ##### Imports #####
 using StatsBase
 using LinearAlgebra
-include("stress_utilities.jl")
+#include("stress_utilities.jl")
 
 ### Function to Assemble Design Matrix for Inversion
 # The normal vectors are in the coordinate system (x1, x2, x3):
